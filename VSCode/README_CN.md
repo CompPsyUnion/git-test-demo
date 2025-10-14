@@ -79,7 +79,7 @@ Visual Studio Code（VSCode）是一款轻量、可扩展且跨平台的代码�
 2. 找到绿色的 `Code` 按钮，点击并复制仓库的 https clone 链接。
 3. 在本地 VSCode 中按照上面的教程打开命令面板，输入 `Git: Clone`，直接粘贴刚才复制的链接并选择一个本地文件夹进行克隆。
 4. 克隆完成后，VSCode 会提示你是否打开该仓库，选择在新窗口打开即可。
-5. 现在你可以在 `Contents/` 目录下找到各个课程的文件，找到我们的这篇教程 `Contents/VSCode/README.md` 并打开继续阅读。
+5. 现在你可以在 `VSCode/` 目录下找到各个课程的文件，找到我们的这篇教程 `VSCode/README_CN.md` 并打开继续阅读。
 
 ---
 

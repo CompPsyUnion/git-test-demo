@@ -79,7 +79,7 @@ If you are not reading this inside a local clone of the `2526-weekly-session` re
 2. Click the green `Code` button and copy the HTTPS clone URL.
 3. In VSCode open the Command Palette, run `Git: Clone`, paste the URL, and pick a local folder to clone into.
 4. When cloning finishes, open the repository in a new window.
-5. Open `Contents/VSCode/README.md` in the editor to continue reading.
+5. Open `VSCode/README.md` in the editor to continue reading.
 
 ---
 
