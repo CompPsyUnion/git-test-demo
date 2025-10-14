@@ -1,0 +1,25 @@
+{
+    "cSpell.words": [
+        "analyzer",
+        "autopep",
+        "bierner",
+        "Cers",
+        "cleanup",
+        "codezombiech",
+        "cpptools",
+        "eamodio",
+        "errorlens",
+        "formulahendry",
+        "ipynb",
+        "isort",
+        "Kief",
+        "Pylance",
+        "toolsai",
+        "usernamehw",
+        "yzhang"
+    ],
+    "markdownlint.config": {
+        "no-bare-urls": false,
+        "first-line-h1": false
+    }
+}
