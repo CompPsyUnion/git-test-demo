@@ -1,14 +1,40 @@
 name: Feature branch welcome
 
+# This workflow will run when a new feature branch is created
 on:
+  workflow_dispatch:
   create:
-    # Trigger when a branch is created
-    types: [created]
+
+# Reference: https://docs.github.com/en/actions/security-guides/automatic-token-authentication
+permissions:
+  # Need `contents: read` to checkout the repository
+  # Need `contents: write` to update files
+  contents: write
 
 jobs:
+  # Get the current branch info and validate it
+  validate_branch:
+    name: Validate branch
+    runs-on: ubuntu-latest
+    outputs:
+      is_feature_branch: ${{ steps.check_branch.outputs.is_feature_branch }}
+    steps:
+      - name: Check if feature branch
+        id: check_branch
+        run: |
+          # Check if this is a branch creation and it's a feature branch
+          if [[ "${{ github.event_name }}" == "create" && \
+                "${{ github.ref_type }}" == "branch" && \
+                "${{ github.ref_name }}" =~ ^feature/.+ ]]; then
+            echo "is_feature_branch=true" >> $GITHUB_OUTPUT
+          else
+            echo "is_feature_branch=false" >> $GITHUB_OUTPUT
+          fi
+
   insert-welcome-line:
-    # only run for branches that start with 'feature/'
-    if: startsWith(github.ref, 'refs/heads/feature/')
+    name: Update files for feature branch
+    needs: validate_branch
+    if: needs.validate_branch.outputs.is_feature_branch == 'true'
     runs-on: ubuntu-latest
 
     steps:
