@@ -13,8 +13,8 @@ cd git-test-demo
 In this repo you need to do: 
 
 * [ ] Pull to local
-* [ ] Create a new branch
-* [ ] Publish the new branch
+* [x] Create a new branch
+* [x] Publish the new branch
 * [ ] Pull updates
 * [ ] Modify content
 * [ ] Push changes

@@ -3,6 +3,8 @@
 Welcome! This document will guide you through basic Git and GitHub practice tasks.  
 You can complete them step by step to get familiar with version control workflows.
 
+Great! You have successfully created a branch. Next, create a yourname.txt file.
+
 ---
 
 ## 🛠️ 1. Setup
